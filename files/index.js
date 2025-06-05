@@ -2,12 +2,12 @@ const express = require("express");
 const app = express();
 const { exec, execSync } = require('child_process');
 const port = process.env.SERVER_PORT || process.env.PORT || 3000;        
-const UUID = process.env.UUID || '62252678-bec9-4eee-9456-095aa59b2bd1'; //
+const UUID = process.env.UUID || '80a991f6-4076-4c1d-be1e-0b8573aa5bd6'; //
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';     
 const NEZHA_PORT = process.env.NEZHA_PORT || '';                     //
 const NEZHA_KEY = process.env.NEZHA_KEY || '';
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';     //
-const ARGO_AUTH = process.env.ARGO_AUTH || '';
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'chore.cctalk.dpdns.org';     //
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiOGU1MGRkNjJiMjczOTE5YWM4NTgzYTMzZDNkMjljODMiLCJ0IjoiYTM3ODk3MzItNzgwZi00YzQ1LWI1MjYtNWRhMzYzZjU5ODdhIiwicyI6Ik5XVmlOREUyTldFdFlqa3pPUzAwWVdVd0xXSXlOekV0WmpNM1l6RTVNbUl4T1RReSJ9';
 const CFIP = process.env.CFIP || 'na.ma';
 const NAME = process.env.NAME || 'Choreo';
 
